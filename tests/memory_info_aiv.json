@@ -1,0 +1,418 @@
+{
+  "Header": {
+    "KernelName": "_prepared_recurrent"
+  },
+  "Record": [
+    {
+      "error_info": "",
+      "memory_info_array": [
+        {
+          "alloc_time_in_ir": 24,
+          "buffer": "%alloc = memref.alloc() {alignment = 64 : i64} : memref<16x128xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            24,
+            130
+          ],
+          "offset": [
+            0
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":50:24)"
+        },
+        {
+          "alloc_time_in_ir": 46,
+          "buffer": "%alloc_3 = memref.alloc() : memref<128x16xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            46,
+            48
+          ],
+          "offset": [
+            8192
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":50:24)"
+        },
+        {
+          "alloc_time_in_ir": 48,
+          "buffer": "%alloc_4 = memref.alloc() {alignment = 64 : i64} : memref<16x128xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            48,
+            130
+          ],
+          "offset": [
+            16384
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":50:24)"
+        },
+        {
+          "alloc_time_in_ir": 66,
+          "buffer": "%alloc_3 = memref.alloc() : memref<1x128xf32, #hivm.address_space<ub>>",
+          "extent": 4096,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            66,
+            111
+          ],
+          "offset": [
+            24576,
+            76000
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":61:20)"
+        },
+        {
+          "alloc_time_in_ir": 72,
+          "buffer": "%alloc_7 = memref.alloc() : memref<1x128xf32, #hivm.address_space<ub>>",
+          "extent": 4096,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            72,
+            104
+          ],
+          "offset": [
+            25088,
+            76512
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":62:20)"
+        },
+        {
+          "alloc_time_in_ir": 77,
+          "buffer": "%alloc_11 = memref.alloc() : memref<16xbf16, #hivm.address_space<ub>>",
+          "extent": 256,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            77,
+            79
+          ],
+          "offset": [
+            25600,
+            77024
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":63:20)"
+        },
+        {
+          "alloc_time_in_ir": 79,
+          "buffer": "%alloc_12 = memref.alloc() {alignment = 64 : i64} : memref<16xf32, #hivm.address_space<ub>>",
+          "extent": 512,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            79,
+            98
+          ],
+          "offset": [
+            25632
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":63:41)"
+        },
+        {
+          "alloc_time_in_ir": 85,
+          "buffer": "%alloc_14 = memref.alloc() : memref<1x128xf32, #hivm.address_space<ub>>",
+          "extent": 4096,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            85,
+            90
+          ],
+          "offset": [
+            25696,
+            77056
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":64:24)"
+        },
+        {
+          "alloc_time_in_ir": 90,
+          "buffer": "%alloc_27 = memref.alloc() {alignment = 64 : i64} : memref<16x128xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            90,
+            130
+          ],
+          "offset": [
+            26208
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":50:24)"
+        },
+        {
+          "alloc_time_in_ir": 90,
+          "buffer": "%alloc_18 = memref.alloc() {alignment = 64 : i64} : memref<16x128xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            90,
+            130
+          ],
+          "offset": [
+            26208
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":50:24)"
+        },
+        {
+          "alloc_time_in_ir": 92,
+          "buffer": "%alloc_19 = memref.alloc() {alignment = 64 : i64} : memref<16x128xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            92,
+            95
+          ],
+          "offset": [
+            34400
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":50:24)"
+        },
+        {
+          "alloc_time_in_ir": 95,
+          "buffer": "%alloc_24 = memref.alloc() {alignment = 64 : i64} : memref<16xf32, #hivm.address_space<ub>>",
+          "extent": 512,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            95,
+            104
+          ],
+          "offset": [
+            42592
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":63:41)"
+        },
+        {
+          "alloc_time_in_ir": 95,
+          "buffer": "%alloc_23 = memref.alloc() {alignment = 64 : i64} : memref<16xf32, #hivm.address_space<ub>>",
+          "extent": 512,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            95,
+            104
+          ],
+          "offset": [
+            42592
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":63:41)"
+        },
+        {
+          "alloc_time_in_ir": 95,
+          "buffer": "%alloc_20 = memref.alloc() {alignment = 64 : i64} : memref<16x1xf32, #hivm.address_space<ub>>",
+          "extent": 512,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            95,
+            104
+          ],
+          "offset": [
+            42592
+          ],
+          "source_location": "loc(callsite(\"/data/wangkaize/.vsglang/lib/python3.11/site-packages/triton/language/standard.py\":282:36 at \"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":67:20))"
+        },
+        {
+          "alloc_time_in_ir": 95,
+          "buffer": "%alloc_21 = memref.alloc() {is_tmpbuf = true} : memref<1024xf32, #hivm.address_space<ub>>",
+          "extent": 32768,
+          "is_tmpbuf": true,
+          "life_time_in_ir": [
+            95,
+            95
+          ],
+          "offset": [
+            42656
+          ],
+          "source_location": "loc(callsite(\"/data/wangkaize/.vsglang/lib/python3.11/site-packages/triton/language/standard.py\":282:36 at \"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":67:20))"
+        },
+        {
+          "alloc_time_in_ir": 104,
+          "buffer": "%alloc_25 = memref.alloc() {alignment = 64 : i64} : memref<16x128xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            104,
+            109
+          ],
+          "offset": [
+            46752
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":50:24)"
+        },
+        {
+          "alloc_time_in_ir": 104,
+          "buffer": "%alloc_26 = memref.alloc() {is_tmpbuf = true} : memref<128xf32, #hivm.address_space<ub>>",
+          "extent": 4096,
+          "is_tmpbuf": true,
+          "life_time_in_ir": [
+            104,
+            104
+          ],
+          "offset": [
+            54944
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":69:30)"
+        },
+        {
+          "alloc_time_in_ir": 111,
+          "buffer": "%alloc_31 = memref.alloc() {alignment = 64 : i64} : memref<16x128xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            111,
+            114
+          ],
+          "offset": [
+            55456
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":50:24)"
+        },
+        {
+          "alloc_time_in_ir": 114,
+          "buffer": "%alloc_36 = memref.alloc() {alignment = 64 : i64} : memref<16xbf16, #hivm.address_space<ub>>",
+          "extent": 512,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            114,
+            120
+          ],
+          "offset": [
+            63648,
+            77568
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":74:44)"
+        },
+        {
+          "alloc_time_in_ir": 114,
+          "buffer": "%alloc_32 = memref.alloc() {alignment = 64 : i64} : memref<16x1xf32, #hivm.address_space<ub>>",
+          "extent": 512,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            114,
+            120
+          ],
+          "offset": [
+            63648,
+            77568
+          ],
+          "source_location": "loc(callsite(\"/data/wangkaize/.vsglang/lib/python3.11/site-packages/triton/language/standard.py\":282:36 at \"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":67:20))"
+        },
+        {
+          "alloc_time_in_ir": 114,
+          "buffer": "%alloc_33 = memref.alloc() {is_tmpbuf = true} : memref<1024xf32, #hivm.address_space<ub>>",
+          "extent": 32768,
+          "is_tmpbuf": true,
+          "life_time_in_ir": [
+            114,
+            114
+          ],
+          "offset": [
+            63712
+          ],
+          "source_location": "loc(callsite(\"/data/wangkaize/.vsglang/lib/python3.11/site-packages/triton/language/standard.py\":282:36 at \"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":73:21))"
+        },
+        {
+          "alloc_time_in_ir": 127,
+          "buffer": "%alloc_3 = memref.alloc() {alignment = 64 : i64} : memref<128x16xf32, #hivm.address_space<ub>>",
+          "extent": 65536,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            127,
+            128
+          ],
+          "offset": [
+            67808
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":76:25)"
+        },
+        {
+          "alloc_time_in_ir": 66,
+          "buffer": "%alloc_3 = memref.alloc() : memref<1x128xf32, #hivm.address_space<ub>>",
+          "extent": 4096,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            66,
+            111
+          ],
+          "offset": [
+            24576,
+            76000
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":61:20)"
+        },
+        {
+          "alloc_time_in_ir": 72,
+          "buffer": "%alloc_7 = memref.alloc() : memref<1x128xf32, #hivm.address_space<ub>>",
+          "extent": 4096,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            72,
+            104
+          ],
+          "offset": [
+            25088,
+            76512
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":62:20)"
+        },
+        {
+          "alloc_time_in_ir": 77,
+          "buffer": "%alloc_11 = memref.alloc() : memref<16xbf16, #hivm.address_space<ub>>",
+          "extent": 256,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            77,
+            79
+          ],
+          "offset": [
+            25600,
+            77024
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":63:20)"
+        },
+        {
+          "alloc_time_in_ir": 85,
+          "buffer": "%alloc_14 = memref.alloc() : memref<1x128xf32, #hivm.address_space<ub>>",
+          "extent": 4096,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            85,
+            90
+          ],
+          "offset": [
+            25696,
+            77056
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":64:24)"
+        },
+        {
+          "alloc_time_in_ir": 114,
+          "buffer": "%alloc_36 = memref.alloc() {alignment = 64 : i64} : memref<16xbf16, #hivm.address_space<ub>>",
+          "extent": 512,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            114,
+            120
+          ],
+          "offset": [
+            63648,
+            77568
+          ],
+          "source_location": "loc(\"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":74:44)"
+        },
+        {
+          "alloc_time_in_ir": 114,
+          "buffer": "%alloc_32 = memref.alloc() {alignment = 64 : i64} : memref<16x1xf32, #hivm.address_space<ub>>",
+          "extent": 512,
+          "is_tmpbuf": false,
+          "life_time_in_ir": [
+            114,
+            120
+          ],
+          "offset": [
+            63648,
+            77568
+          ],
+          "source_location": "loc(callsite(\"/data/wangkaize/.vsglang/lib/python3.11/site-packages/triton/language/standard.py\":282:36 at \"/data/wangkaize/src/01-glm53-ascend/bench_prepared_recurrent/bench_prepared_recurrent.py\":67:20))"
+        }
+      ],
+      "scope": "ub",
+      "status": "success"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ascend-analyzers"
+version = "0.1.0"
+description = "Offline analysis tools for Ascend NPU toolchain reports (BiSheng / Triton compiler)"
+requires-python = ">=3.9"
+license = "MIT"
+readme = "README.md"
+keywords = ["ascend", "npu", "bisheng", "triton", "memory", "compiler"]
+
+[project.scripts]
+ascend-ub-analyzer = "ascend_analyzers.ub.analyzer:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
